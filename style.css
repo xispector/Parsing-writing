@@ -1,0 +1,139 @@
+/* default setting */
+* {
+  box-sizing: border-box;
+}
+
+
+/* background setting */
+html {
+  background-color: #EBF8FF;
+  width: 1920px;
+  height: 1080px;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* data getting part */
+
+#intro {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#intro h1 {
+  position: fixed;
+  font-size: 48px;
+  width: 350px;
+  height: 99px;
+  top: 50px;
+  left: 140px;
+  font-weight: bold;
+  color: white;
+}
+
+#speechBubble {
+  width: 90vw;
+  height: auto;
+  z-index: -1;
+}
+
+svg {
+  position: fixed;
+  width: 1832px;
+  height: 573px;
+  left: 18px;
+  top: 49px;
+  z-index: -1;
+}
+
+#speechBubbleCore {
+  margin-top: 100px;
+  margin-bottom: -300px;
+  z-index: 0;
+  position: relative;
+}
+
+#example {
+  border-radius: 13px;
+  width: 1288px;
+  height: 112px;
+  position: fixed;
+  top: 90px;
+  left: 500px;
+  filter: drop-shadow(3px 3px 4px black);
+}
+
+canvas {
+  width: 1655px;
+  height: 171px;
+  background-color: white;
+  border-radius: 18px;
+  position: fixed;
+  top: 230px;
+  left: 110px;
+  filter: drop-shadow(3px 3px 4px black);
+}
+
+#controlBtn {
+  position: fixed;
+  width: 1114px;
+  height: 80px;
+  border-radius: 83px;
+  top: 500px;
+  left: 500px;
+  border: 0;
+  filter: drop-shadow(2px 2px 2px black);
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+#controlBtn:hover {
+  scale: 1.02;
+  transition: all .2s ease-in-out;
+}
+
+#controlBtn:active {
+  opacity: 80%;
+}
+
+.startBtn {
+  background-color: #29F556;
+}
+
+.offBtn {
+  background-color: red;
+}
+
+#squirrel {
+  width: 457px;
+  height: 359px;
+  border-radius: 119px;
+  position: fixed;
+  top: 490px;
+  left: -126px;
+  z-index: -2;
+}
+
+#dataHistory {
+  position: fixed;
+  width: 1920px;
+  height: 400px;
+  background-color: #C6C6C6;
+  bottom: 0px;
+  left: 0px;
+  z-index: -3;
+}
+
+#collectData {
+  display: none;
+}

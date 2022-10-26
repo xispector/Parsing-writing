@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글씨 설문조사</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div id="getData">
+      <div id="speechBubbleCore">
+        <div id="intro">
+          <h1>글자를 <br> 입력해 주세요</h1>
+          <img id="example" src="./daramjui.png" alt="다람쥐 헌 쳇바퀴에 타고파 예제 사진">
+        </div>
+        <canvas></canvas>
+      </div>
+      <svg width="1832" height="573" viewBox="0 0 1832 573" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M211.928 512.661C206.704 515.492 200.483 513.813 198.776 509.111L121.949 297.516C119.554 290.919 127.382 283.798 134.821 285.806L446.752 370.012C454.191 372.02 454.361 381.301 447.032 385.273L211.928 512.661Z" fill="#A44B0A"/>
+        <rect x="31.5635" width="1800.44" height="396" rx="85" fill="#A44B0A"/>
+        <g clip-path="url(#clip0_2_14)">
+        <path d="M215.792 510.568C209.098 514.195 199.701 511.658 197.513 505.634L121.885 297.339C119.336 290.321 128.231 284.027 137.254 286.463L444.319 369.356C453.342 371.791 455.025 380.941 447.228 385.166L215.792 510.568Z" fill="#A44B0A"/>
+        <path d="M1720.21 0H143.351C81.6125 0 31.5635 38.0558 31.5635 85V311C31.5635 357.944 81.6125 396 143.351 396H1720.21C1781.95 396 1832 357.944 1832 311V85C1832 38.0558 1781.95 0 1720.21 0Z" fill="#A44B0A"/>
+        <path d="M215.792 510.568C209.098 514.195 199.701 511.658 197.513 505.634L121.885 297.339C119.336 290.321 128.231 284.027 137.254 286.463L444.319 369.356C453.342 371.791 455.025 380.941 447.228 385.166L215.792 510.568Z" fill="#A44B0A"/>
+        <path d="M1720.21 0H143.351C81.6125 0 31.5635 38.0558 31.5635 85V311C31.5635 357.944 81.6125 396 143.351 396H1720.21C1781.95 396 1832 357.944 1832 311V85C1832 38.0558 1781.95 0 1720.21 0Z" fill="#A44B0A"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_2_14">
+        <rect width="1832" height="573" fill="white"/>
+        </clipPath>
+        </defs>
+        </svg>
+        
+      <button id="controlBtn" class="startBtn">데이터 수집 시작</button>
+    </div>
+    <div id="dataVeiw">
+      <img id="squirrel" src="https://w.namu.la/s/b8e7f427d377cdb94696db8eb193494f0f5b745abdf5e2577a89de80607e5aad0a8306842f9123eb6d265e72825c645c4f27c3c1fb6590cff420f50f473b650bfa728d6cf5241b2f10eb7211101fea98076322f5f4a50510c3f0e285930ef5a0" alt="다람쥐가 돌 위에 앉아 있는 사진">
+      <div id="dataHistory">
+        <table id="collectData">
+          <tr>
+            <th>time</th>
+            <th>xpos</th>
+            <th>ypos</th>
+            <th>pressure</th>
+            <th>xtilt</th>
+            <th>ytilt</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="./canvas.js"></script>
+  <script type="module" src="./getData.js"></script>
+</body>
+</html>
